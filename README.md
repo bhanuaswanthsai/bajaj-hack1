@@ -82,6 +82,18 @@ npm run dev
 5. Output Directory: `dist`
 6. Add env var: `VITE_API_URL=https://your-backend.onrender.com`
 
+### Frontend (Netlify)
+1. Push to GitHub and log in to [Netlify](https://app.netlify.com/)
+2. Click **"Add new site"** -> **"Import an existing project"**
+3. Connect your GitHub and select the `bajaj-hack1` repository
+4. Set **Base directory** to: `frontend`
+5. Set **Build command** to: `npm run build`
+6. Set **Publish directory** to: `frontend/dist`
+7. Click **"Add environment variables"** and add:
+   - Key: `VITE_API_URL`
+   - Value: `https://your-backend-url.onrender.com` *(Replace this with your deployed backend URL)*
+8. Click **Deploy site**
+
 ## 📤 GitHub Push Steps
 ```bash
 git init
